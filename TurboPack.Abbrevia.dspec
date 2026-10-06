@@ -41,25 +41,25 @@ targetPlatforms:
       - win32
       - win64
     variables:
-      packagesource: /packages/Berlin/Delphi
+      packageSource: /packages/Berlin/Delphi
   - compiler: delphi10.2
     platforms:
       - win32
       - win64
     variables:
-      packagesource: /packages/Tokyo/Delphi
+      packageSource: /packages/Tokyo/Delphi
   - compiler: delphi10.3
     platforms:
       - win32
       - win64
     variables:
-      packagesource: /packages/Rio/Delphi
+      packageSource: /packages/Rio/Delphi
   - compiler: delphi10.4
     platforms:
       - win32
       - win64
     variables:
-      packagesource: /packages/Sydney/Delphi
+      packageSource: /packages/Sydney/Delphi
   - compiler from: delphi11.0
     compiler to: delphi12.0
     platforms:
@@ -83,6 +83,7 @@ templates:
       - src: ./source/Win32/*.*
       - src: ./source/Win64/*.*
       - src: ./source/WinARM64EC/*.*
+        copyToLib: true
       - src: $packageSource$/*.dpk
       - src: $packageSource$/*.dproj
       - src: $packageSource$/*.res

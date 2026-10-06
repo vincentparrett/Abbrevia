@@ -62,7 +62,7 @@ type
 
 {$IFDEF CPUARM64}
   {$DEFINE USE_LIBWAVPACK}
-  const libwavpack = 'WinARM64EC\wavpack.a';
+  const libwavpack = 'wavpack.a';
 {$ENDIF}
 
 { C runtime library ======================================================== }

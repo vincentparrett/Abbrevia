@@ -67,7 +67,7 @@ uses
   {$L Win64\Ppmd8Dec.o}
 {$ELSEIF DEFINED(CPUARM64)}
   {$DEFINE USE_LIBPPMD}
-  const libppmd = 'WinARM64EC\ppmd.a';
+  const libppmd = 'ppmd.a';
 {$ELSE}
   {$FATAL 'Unsupported CPU/platform'}
 {$IFEND}

@@ -84,7 +84,7 @@ function LzmaEncodeBuffer(APUncompressedData: Pointer; AUncompressedSize: Intege
 {$IFDEF CPUARM64}
 {$DEFINE USE_LIBLZMA}
 const
-  liblzma = 'WinARM64EC\lzma.a';
+  liblzma = 'lzma.a';
 {$ENDIF}
 
 { 7zTypes.h declarations =================================================== }

@@ -205,7 +205,7 @@ uses
 
 const
   libbz2 =
-    {$IF DEFINED(Bzip2Static) AND DEFINED(CPUARM64)}'WinARM64EC\bz2.a'
+    {$IF DEFINED(Bzip2Static) AND DEFINED(CPUARM64)}'bz2.a'
     {$ELSEIF DEFINED(MSWINDOWS)}'libbz2.dll'
     {$ELSEIF DEFINED(MACOS)}'libbz2.dylib'
     {$ELSE}'libbz2.so.1'{$IFEND};
